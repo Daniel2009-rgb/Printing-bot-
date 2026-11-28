@@ -5,6 +5,7 @@ app.use(express.json());
 
 const TOKEN = process.env.WHATSAPP_TOKEN;
 const PHONE_ID = process.env.PHONE_ID;
+const VERIFY_TOKEN = process.env.VERIFY_TOKEN;
 app.get('/debug', (req, res) => res.send('TOKEN INAYOONEKANA NI: [' + process.env.VERIFY_TOKEN + ']'));
 
 app.get('/webhook', (req, res) => {
